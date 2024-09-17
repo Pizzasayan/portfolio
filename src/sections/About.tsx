@@ -106,7 +106,7 @@ const hobbies = [
   {
     title: "Musique Electro",
     emoji: "🎶",
-    left: "0%",
+    left: "100%",
     top: "20%",
   },
 ];
