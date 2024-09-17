@@ -1,13 +1,12 @@
-import mugenLandingPage from "@/assets/images/mugen.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import mugenLandingPage from "@/assets/images/mugen-landing-page.png";
+import bac28LandingPage from "@/assets/images/bac28.png";
+import godotLandingPage from "@/assets/images/godot-landing-page.png";
 import { Card } from "@/components/Card";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
-
+import Link from "next/link";
 const portfolioProjects = [
   {
     company: "CDA",
@@ -22,35 +21,35 @@ const portfolioProjects = [
     image: mugenLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Godot, projet personnel",
+    year: "2024",
+    title: "Jeux mobile avec le moteur Godot",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Utilisation du podomètre" },
+      { title: "Gamification d'une application de santé" },
+      { title: "Design, Architecture, et conception de l'application" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://i.giphy.com/JJLc5PUVwnOT15Mq13.webp",
+    image: godotLandingPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "CDA (WIP)",
+    year: "2024",
+    title: "Application quizz pour lycéens",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Designer sur Figma" },
+      { title: "Utilisation de Ionic,Angular.." },
+      { title: "WIP" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://cdn.pixabay.com/animation/2023/07/19/01/41/01-41-18-281_512.gif",
+    image: bac28LandingPage,
   },
 ];
 
 export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
-      <div className="container">
+      <div id="projects" className="container">
         <SectionHeader
           eyebrow="Travaux Pratiques"
           title="Réalisations"
@@ -62,7 +61,7 @@ export const ProjectsSection = () => {
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
               style={{
-                top: `calc(64px + ${projectIndex * 40}px`
+                top: `calc(64px + ${projectIndex * 200}px`
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
@@ -84,7 +83,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href="project.link">
+                  <Link href={project.link} target="_blank">
                     <button
                       className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold
                     inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6"
@@ -92,7 +91,7 @@ export const ProjectsSection = () => {
                       <span>Visiter le site</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
-                  </a>
+                  </Link>
                 </div>
                 <div className="relative">
                   <Image

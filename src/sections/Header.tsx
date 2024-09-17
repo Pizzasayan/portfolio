@@ -1,19 +1,21 @@
+import Link from "next/link";
+
 export const Header = () => {
   return (
     <div className="flex justify-center items-center fixed top-3 w-full z-10">
       <nav className="flex gap-1 p-0.5 border border-white-/15 rounded-full bg-white/10 backdrop-blur">
-        <a href="#" className="nav-item">
+        <Link href="#home" className="nav-item scroll-smooth">
           Accueil
-          </a>
-        <a href="#" className="nav-item">
+          </Link>
+        <Link href="#projects" className="nav-item scroll-smooth">
           Projets
-          </a>
-        <a href="#" className="nav-item">
+          </Link>
+        <Link href="#about"  className="nav-item scroll-smooth">
           Bio
-          </a>
-        <a href="#" className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900">
+          </Link>
+        <Link href="#contact" className="scroll-smooth nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900">
           Contact
-          </a>
+          </Link>
       </nav>
     </div>
   );

@@ -4,7 +4,7 @@ import grainImage from "@/assets/images/grain.jpg";
 export const ContactSection = () => {
   return (
     <div className="py-16 pt-14 lg:py-24 lg:pt-20">
-      <div className="container">
+      <div id="contact" className="container">
         <div className="z-0 relative bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl text-center md:text-left overflow-hidden">
           <div
             className="absolute inset-0 opacity-10 -z-10"
