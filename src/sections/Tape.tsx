@@ -2,19 +2,15 @@ import StarIcon from "@/assets/icons/star.svg";
 import { Fragment } from "react";
 
 const words = [
-  "Discipliné",
-  "Passioné",
-  "Lead",
+  "Motivateur",
   "Curieux",
-  "Travailleur",
-  "Souriant",
-  "Efficace",
-  "Investi",
-  "Communicatif",
-  "Teamplayer",
-  "Responsive Design",
-  "Frontend",
-  "Backend",
+  "Lumineux",
+  "Esprit d'équipe",
+  "Communication claire",
+  "Collaboratif",
+  "Fullstack",
+  "Responsable",
+  "Bilingue",
 ];
 
 export const TapeSection = () => {

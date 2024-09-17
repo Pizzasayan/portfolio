@@ -16,12 +16,10 @@ import SymfonyIcon from "@/assets/icons/symfony.svg";
 import JavaIcon from "@/assets/icons/java.svg";
 import SpringIcon from "@/assets/icons/spring.svg";
 import AngularIcon from "@/assets/icons/angular.svg";
-import IonicIcon from "@/assets/icons/ionic.svg";
 import ReactIcon from "@/assets/icons/react.svg";
+import PhpIcon from "@/assets/icons/php.svg";
 
 import bookCover1 from "@/assets/images/meditations.png";
-import bookCover2 from "@/assets/images/musashi.png";
-import bookCover3 from "@/assets/images/infinitegame.png";
 import smileMemoji from "@/assets/images/smiley-momoji.png";
 import mapImage from "@/assets/images/map.png";
 
@@ -38,10 +36,10 @@ const toolboxItems = [
     title: "CSS3",
     iconType: CssIcon,
   },
-  // {
-  //   title: "PHP",
-  //   iconType: PhpIcon,
-  // },
+  {
+    title: "PHP",
+    iconType: PhpIcon,
+  },
   {
     title: "Symfony",
     iconType: SymfonyIcon,
@@ -59,10 +57,6 @@ const toolboxItems = [
     iconType: AngularIcon,
   },
   {
-    title: "Ionic",
-    iconType: IonicIcon,
-  },
-  {
     title: "React",
     iconType: ReactIcon,
   },
@@ -74,7 +68,7 @@ const toolboxItems = [
 
 const hobbies = [
   {
-    title: "Peinture",
+    title: "Dessin",
     emoji: "✏",
     left: "50%",
     top: "5%",
@@ -103,6 +97,18 @@ const hobbies = [
     left: "45%",
     top: "50%",
   },
+  {
+    title: "Manga",
+    emoji: "👀",
+    left: "15%",
+    top: "20%",
+  },
+  {
+    title: "Musique Electro",
+    emoji: "🎶",
+    left: "0%",
+    top: "20%",
+  },
 ];
 
 export const AboutSection = () => {
@@ -111,18 +117,18 @@ export const AboutSection = () => {
     <div className="py-20 lg:py-28">
       <div id="about" className="container">
         <SectionHeader
-          eyebrow="A propos de moi"
-          title="Mes passions et hobbies"
-          description="Ce qui m'attire et que j'aime partager"
+          eyebrow="Mes inspirations et mes pinceaux"
+          title="Hobbies, Framework et langages"
+          description="« Sans un minimum de loisir, pas de travail créateur, par conséquent pas de culture ni de civilisation.» - De Roy Lewis"
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
-                title="Mes lectures"
-                description="Des livres qui la vision des choses"
+                title="Mon guide"
+                description="Le dernier best-seller de l'influenceur Marc-Aurèle"
               />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
+              <div className="w-50 mx-auto mt-2 md:mt-0">
                 <Image
                   src={bookCover1}
                   alt="Couverture du livre Méditations de Marc-Aurèle "
@@ -132,9 +138,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] col-span-3 lg:col-span-2">
               <CardHeader
                 title="Mes Outils"
-                description="Ce que j'utilise, ce que je cherche à approndir, et ce que je
-                compte parfaire."
-                className=""
+                description="A mettre au service de votre projet"
               />
               <ToolBoxItems
                 items={toolboxItems}
@@ -152,7 +156,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Développeur mais aussi.."
-                description="Mes intêrets et passions qui me font sourire."
+                description="Rien de mieux pour réflechir qu'une petite partie."
                 className="pt-6 px-6"
               />
               <div className="relative flex-1" ref={constraintRef}>
@@ -179,16 +183,11 @@ export const AboutSection = () => {
               <Image
                 src={mapImage}
                 alt="Plan d'Agen"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-left-right"
               />
-              <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
-                <Image
-                  src={smileMemoji}
-                  alt="Emoji de Farda"
-                  className="size-20"
-                />
+              <div className="absolute top-1/4 left-1/2 -translate-x-1/4 -translate-y-1/5 size-20 rounded-full">
+                <div className="size-7 absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
+                <div className="size-7 absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
               </div>
             </Card>
           </div>

@@ -11,11 +11,11 @@ const portfolioProjects = [
   {
     company: "CDA",
     year: "2024",
-    title: "Redesign d'un travaux pratique",
+    title: "Mugen_2.0 (WIP)",
     results: [
-      { title: "Amélioration esthétique" },
-      { title: "Lisibilité augmentée" },
-      { title: "Etude de design" },
+      { title: "Refonte d'un TP" },
+      { title: "Design intéractif et épuré" },
+      { title: "Mobilisation front" },
     ],
     link: "https://cda-app.alwaysdata.net/mugen/",
     image: mugenLandingPage,
@@ -25,9 +25,9 @@ const portfolioProjects = [
     year: "2024",
     title: "Jeux mobile avec le moteur Godot",
     results: [
-      { title: "Utilisation du podomètre" },
       { title: "Gamification d'une application de santé" },
-      { title: "Design, Architecture, et conception de l'application" },
+      { title: "Réimaginer le concept de tamagochi" },
+      { title: "Mobilisation Front et Back" },
     ],
     link: "https://i.giphy.com/JJLc5PUVwnOT15Mq13.webp",
     image: godotLandingPage,
@@ -35,10 +35,10 @@ const portfolioProjects = [
   {
     company: "CDA (WIP)",
     year: "2024",
-    title: "Application quizz pour lycéens",
+    title: "Application quizz pour étudiants",
     results: [
-      { title: "Designer sur Figma" },
-      { title: "Utilisation de Ionic,Angular.." },
+      { title: "Maquettage Figma" },
+      { title: "Utilisation de Ionic, Angular.." },
       { title: "WIP" },
     ],
     link: "https://cdn.pixabay.com/animation/2023/07/19/01/41/01-41-18-281_512.gif",
@@ -51,9 +51,9 @@ export const ProjectsSection = () => {
     <section className="pb-16 lg:py-24">
       <div id="projects" className="container">
         <SectionHeader
-          eyebrow="Travaux Pratiques"
-          title="Réalisations"
-          description="Designer sans surchage"
+          eyebrow="Le design au service d'un but"
+          title="Projets et Travaux Pratiques"
+          description="« Créer un design numérique, c’est comme peindre, sauf que la peinture ne sèche jamais. » – Neville Brody"
         />
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
           {portfolioProjects.map((project, projectIndex) => (
@@ -77,7 +77,7 @@ export const ProjectsSection = () => {
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (
-                      <li className="flex gap-2 text-sm text-white/50 md:text-base">
+                      <li key={result.toString()} className="flex gap-2 text-sm text-white/50 md:text-base">
                         <CheckCircleIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>
