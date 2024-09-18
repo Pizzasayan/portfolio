@@ -1,14 +1,12 @@
+import rustAvatar from "@/assets/images/rust.png";
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-smile.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import grainImage from "@/assets/images/grain.jpg";
-import Image from "next/image";
-import test from "node:test";
 import { Fragment } from "react";
+
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -20,8 +18,8 @@ const testimonials = [
   {
     name: "Théo M.",
     position: "Collaborateur @ C2RT",
-    text: "Il organise nos soirées poker.",
-    avatar: memojiAvatar3,
+    text: "",
+    avatar: rustAvatar,
   },
   {
     name: "Tony D.",

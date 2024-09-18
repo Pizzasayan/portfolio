@@ -20,7 +20,6 @@ import ReactIcon from "@/assets/icons/react.svg";
 import PhpIcon from "@/assets/icons/php.svg";
 
 import bookCover1 from "@/assets/images/meditations.png";
-import smileMemoji from "@/assets/images/smiley-momoji.png";
 import mapImage from "@/assets/images/map.png";
 
 const toolboxItems = [
@@ -104,7 +103,7 @@ const hobbies = [
     top: "20%",
   },
   {
-    title: "Musique Electro",
+    title: "Electro",
     emoji: "🎶",
     left: "100%",
     top: "20%",

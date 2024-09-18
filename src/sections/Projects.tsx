@@ -61,7 +61,7 @@ export const ProjectsSection = () => {
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
               style={{
-                top: `calc(64px + ${projectIndex * 200}px`
+                top: `calc(64px + ${projectIndex * 160}px`
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">

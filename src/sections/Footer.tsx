@@ -1,9 +1,10 @@
 import ArrowIcon from "@/assets/icons/arrow-up-right.svg";
+import Link from "next/link";
 
 const footerLinks = [
   {
     title: "LinkedIn",
-    href: "#"
+    href: "https://www.linkedin.com/in/farda-safari-161330313/"
   },
   // {
   //   title: "Instagram",
@@ -22,10 +23,10 @@ export const Footer = () => {
 
         <nav className="flex flex-col md:flex-row items-center gap-8">
           {footerLinks.map(link => (
-            <a href="#" key={link.title} className="inline-flex items-center gap-1.5">
+            <Link href={link.href} key={link.title} className="inline-flex items-center gap-1.5">
               <span className="font-semibold">{link.title}</span>
               <ArrowIcon className="size-4" />
-            </a>
+            </Link>
           ))}
         </nav>
         </div>

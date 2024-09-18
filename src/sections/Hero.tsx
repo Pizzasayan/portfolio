@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export const HeroSection = () => {
   return (
-    <div id="home" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div id="home" className="py-32 md:py-48 lg:py-60 lg:mb-2 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -22,25 +22,25 @@ export const HeroSection = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
         <HeroOrbit size={350} rotation={20} shouldOrbit orbitDuration="30s" shouldSpin spinDuration="6s">
-          <StarIcon className="size-12 text-blue-300" />
-        </HeroOrbit>
-        <HeroOrbit size={420} rotation={-59} shouldOrbit orbitDuration="33s" shouldSpin spinDuration="6s">
-          <div className="size-2 bg-white/30 rounded-full" />
+          <StarIcon className="size-12 text-emerald-300" />
         </HeroOrbit>
         <HeroOrbit size={510} rotation={144} shouldOrbit orbitDuration="36s" shouldSpin spinDuration="6s">
-          <SparkleIcon className="size-14 text-blue-100/30" />
+          <SparkleIcon className="size-14 text-emerald-300" />
         </HeroOrbit>
         <HeroOrbit size={580} rotation={79} shouldOrbit orbitDuration="39s" shouldSpin spinDuration="6s">
           <SparkleIcon className="size-5 text-blue-100/10" />
         </HeroOrbit>
-        <HeroOrbit size={800} rotation={178} shouldOrbit orbitDuration="42s" shouldSpin spinDuration="6s">
+        <HeroOrbit size={300} rotation={178} shouldOrbit orbitDuration="42s" shouldSpin spinDuration="6s">
           <SparkleIcon className="size-10 text-blue-100/30" />
         </HeroOrbit>
         <HeroOrbit size={780} rotation={-15} shouldOrbit orbitDuration="45s" shouldSpin spinDuration="6s">
           <SparkleIcon className="size-10 text-blue-100/30" />
         </HeroOrbit>
         <HeroOrbit size={630} rotation={98} shouldOrbit orbitDuration="48s" shouldSpin spinDuration="6s">
-          <StarIcon className="size-8 text-blue-400" />
+          <StarIcon className="size-8 text-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit size={780} rotation={-2} shouldOrbit orbitDuration="57s" shouldSpin spinDuration="3s">
+          <StarIcon className="size-28 text-emerald-300" />
         </HeroOrbit>
         <HeroOrbit size={690} rotation={200} shouldOrbit orbitDuration="51s" shouldSpin spinDuration="9s">
           <div className="size-4 bg-white/30 rounded-full" />
@@ -48,8 +48,8 @@ export const HeroSection = () => {
         <HeroOrbit size={750} rotation={85} shouldOrbit orbitDuration="54s" shouldSpin spinDuration="3s">
           <div className="size-3 bg-white/30 rounded-full" />
         </HeroOrbit>
-        <HeroOrbit size={580} rotation={-2} shouldOrbit orbitDuration="57s" shouldSpin spinDuration="3s">
-          <StarIcon className="size-28 text-blue-200" />
+        <HeroOrbit size={420} rotation={-59} shouldOrbit orbitDuration="33s" shouldSpin spinDuration="6s">
+          <div className="size-2 bg-white/30 rounded-full" />
         </HeroOrbit>
       </div>
 
@@ -72,7 +72,7 @@ export const HeroSection = () => {
             Développeur/Collègue/Ami
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Concepteur fullstack de programmes web et mobile, avec une ceinture noir en Soft Skill et un rire contagieux.
+            Concepteur fullstack de programmes web et mobile, avec une ceinture noire en Soft Skill et un rire contagieux.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
