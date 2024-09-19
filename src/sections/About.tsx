@@ -175,8 +175,8 @@ export const AboutSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="Développeur mais aussi.."
-                description=""
+                title="Mes hobbies"
+                description="Ce que je développe sur le côté."
                 className="pt-6 px-6"
               />
               <div className="relative flex-1" ref={constraintRef}>
