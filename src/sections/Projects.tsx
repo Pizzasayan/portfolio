@@ -44,7 +44,7 @@ const portfolioProjects = [
     ],
     link: "https://i.giphy.com/JJLc5PUVwnOT15Mq13.webp",
     image: godotLandingPage,
-  }
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -62,7 +62,7 @@ export const ProjectsSection = () => {
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
               style={{
-                top: `calc(64px + ${projectIndex * 160}px`
+                top: `calc(64px + ${projectIndex * 160}px`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
@@ -78,7 +78,10 @@ export const ProjectsSection = () => {
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (
-                      <li key={result.toString()} className="flex gap-2 text-sm text-white/50 md:text-base">
+                      <li
+                        key={result.toString()}
+                        className="flex gap-2 text-sm text-white/50 md:text-base"
+                      >
                         <CheckCircleIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>

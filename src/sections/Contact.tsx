@@ -24,7 +24,7 @@ export const ContactSection = () => {
             </div>
             <div>
               <div className="text-white font-semibold bg-gray-800 w-max inline-flex items-center px-6 h-12 gap-2 rounded-xl border border-gray-900">
-                <ContactButton content="fardasafari@gmail.com"></ContactButton>
+                <ContactButton></ContactButton>
                 <ArrowUpRightIcon className="size-4" />
               </div>
             </div>
