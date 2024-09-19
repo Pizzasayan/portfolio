@@ -10,10 +10,22 @@ import Image from "next/image";
 
 const testimonials = [
   {
+    name: "Manon D.",
+    position: "Présidente @ Maison",
+    text: "Farda fait de très bons cookies, quand il ne travaille pas. Sauf qu'il travaille tout le temps.",
+    avatar: memojiAvatar4,
+  },
+  {
     name: "Guillaume N.",
     position: "Formatteur @ C2RT",
-    text: "C'est un mec sympa.",
+    text: "",
     avatar: memojiAvatar1,
+  },
+  {
+    name: "Tony D.",
+    position: "Coordinateur @ C2RT",
+    text: "",
+    avatar: memojiAvatar5,
   },
   {
     name: "Théo M.",
@@ -22,23 +34,11 @@ const testimonials = [
     avatar: rustAvatar,
   },
   {
-    name: "Tony D.",
-    position: "Coordinateur @ C2RT",
-    text: "Le serveur du groupe CDA",
-    avatar: memojiAvatar5,
-  },
-  {
-    name: "Manon D.",
-    position: "Présidente @ Maison",
-    text: "Farda devrait travailler moins souvent",
-    avatar: memojiAvatar4,
-  },
-  {
     name: "Eric Ducreux",
-    position: "",
+    position: "Collaborateur @ C2RT",
     text: "",
     avatar: memojiAvatar1,
-  },
+  }
 ];
 
 export const TestimonialsSection = () => {
@@ -47,7 +47,7 @@ export const TestimonialsSection = () => {
       <div className="container">
         <SectionHeader
           eyebrow="Le savoir faire mais aussi le savoir vivre"
-          title="Témoignages de collaborateurs"
+          title="Témoignages"
           description="« Tenir à l'estime de quelqu'un, c'est l'estimer; et c'est le témoignage le plus délicat qu'on puisse lui donner de son estime. » - Charles Dollfus"
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
@@ -67,8 +67,8 @@ export const TestimonialsSection = () => {
                           className="max-h-full"
                         />
                       </div>
-                      <div className="font-semibold">{testimonial.name}</div>
-                      <div className="text-sm text-white/40">
+                      <div className="font-semibold ">{testimonial.name}</div>
+                      <div className="text-sm text-white/50">
                         {testimonial.position}
                       </div>
                     </div>

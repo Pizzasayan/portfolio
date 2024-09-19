@@ -7,13 +7,14 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import Link from "next/link";
+
 const portfolioProjects = [
   {
-    company: "CDA",
+    company: "CDA - WIP",
     year: "2024",
-    title: "Mugen_2.0 (WIP)",
+    title: "Mugen 2.0 - Une étude de refonte graphique",
     results: [
-      { title: "Refonte d'un TP" },
+      { title: "Refonte d'un TP bootstrap" },
       { title: "Design intéractif et épuré" },
       { title: "Mobilisation front" },
     ],
@@ -21,19 +22,7 @@ const portfolioProjects = [
     image: mugenLandingPage,
   },
   {
-    company: "Godot, projet personnel",
-    year: "2024",
-    title: "Jeux mobile avec le moteur Godot",
-    results: [
-      { title: "Gamification d'une application de santé" },
-      { title: "Réimaginer le concept de tamagochi" },
-      { title: "Mobilisation Front et Back" },
-    ],
-    link: "https://i.giphy.com/JJLc5PUVwnOT15Mq13.webp",
-    image: godotLandingPage,
-  },
-  {
-    company: "CDA (WIP)",
+    company: "CDA - WIP",
     year: "2024",
     title: "Application quizz pour étudiants",
     results: [
@@ -44,6 +33,18 @@ const portfolioProjects = [
     link: "https://cdn.pixabay.com/animation/2023/07/19/01/41/01-41-18-281_512.gif",
     image: bac28LandingPage,
   },
+  {
+    company: "Godot, projet personnel - WIP",
+    year: "2024",
+    title: "Jeux mobile avec le moteur Godot",
+    results: [
+      { title: "Gamification d'une application de santé" },
+      { title: "Réimaginer le concept de tamagochi" },
+      { title: "Mobilisation Front et Back" },
+    ],
+    link: "https://i.giphy.com/JJLc5PUVwnOT15Mq13.webp",
+    image: godotLandingPage,
+  }
 ];
 
 export const ProjectsSection = () => {
@@ -52,7 +53,7 @@ export const ProjectsSection = () => {
       <div id="projects" className="container">
         <SectionHeader
           eyebrow="Le design au service d'un but"
-          title="Projets et Travaux Pratiques"
+          title="Réalisations"
           description="« Créer un design numérique, c’est comme peindre, sauf que la peinture ne sèche jamais. » – Neville Brody"
         />
         <div className="flex flex-col gap-20 mt-10 md:mt-20">

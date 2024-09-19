@@ -3,12 +3,12 @@ import { Fragment } from "react";
 
 const words = [
   "Consciencieux",
-  "Rigoureux",
-  "Lumineux",
   "Esprit d'équipe",
+  "Rigoureux",
   "Communication claire",
   "Collaboratif",
   "Fullstack",
+  "Lumineux",
   "Responsable",
   "Bilingue",
 ];

@@ -1,5 +1,6 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import ContactButton from "@/components/ContactButton";
 
 export const ContactSection = () => {
   return (
@@ -18,14 +19,14 @@ export const ContactSection = () => {
                 Prêt à collaborer ensemble !
               </h2>
               <p className="text-sm md:text-base mt-2">
-                Projet de site web ou un poste à pourvoir ? Lancez la conversation et c'est parti.
+                Projet de site web ou un poste à pourvoir ? Lancez la conversation.
               </p>
             </div>
             <div>
-              <button className="text-white bg-gray-800 w-max inline-flex items-center px-6 h-12 gap-2 rounded-xl border border-gray-900">
-                <span className="font-semibold">Me contacter</span>
+              <div className="text-white font-semibold bg-gray-800 w-max inline-flex items-center px-6 h-12 gap-2 rounded-xl border border-gray-900">
+                <ContactButton content="fardasafari@gmail.com"></ContactButton>
                 <ArrowUpRightIcon className="size-4" />
-              </button>
+              </div>
             </div>
           </div>
         </div>

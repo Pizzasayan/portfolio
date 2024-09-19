@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolBoxItems } from "@/components/ToolboxItems";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useRef } from "react";
 
 import Image from "next/image";
@@ -85,7 +85,7 @@ const hobbies = [
     top: "35%",
   },
   {
-    title: "Chats",
+    title: "Chat",
     emoji: "😽",
     left: "70%",
     top: "45%",
@@ -105,10 +105,31 @@ const hobbies = [
   {
     title: "Electro",
     emoji: "🎶",
-    left: "100%",
+    left: "80%",
     top: "20%",
   },
+  {
+    title: "Famille",
+    emoji: "👪",
+    left: "10%",
+    top: "70%",
+  }
 ];
+
+const cardVariants: Variants = {
+  offscreen: {
+    y: 300
+  },
+  onscreen: {
+    y: 50,
+    rotate: -10,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+};
 
 export const AboutSection = () => {
   const constraintRef = useRef(null);
@@ -117,17 +138,17 @@ export const AboutSection = () => {
       <div id="about" className="container">
         <SectionHeader
           eyebrow="Mes inspirations et mes pinceaux"
-          title="Hobbies, Framework et langages"
+          title="A propos de moi"
           description="« Sans un minimum de loisir, pas de travail créateur, par conséquent pas de culture ni de civilisation.» - De Roy Lewis"
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
-            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
+            <Card className="p-0 md:col-span-2 lg:col-span-1 md:h-[320px] lg:h-[320px] col-span-1 h-[0px]">
               <CardHeader
-                title="Mon guide"
+                title="Mon Livre"
                 description="Le dernier best-seller de l'influenceur Marc-Aurèle"
               />
-              <div className="w-50 mx-auto mt-2 md:mt-0">
+              <div className="w-70 mx-auto mt-2 md:mt-0">
                 <Image
                   src={bookCover1}
                   alt="Couverture du livre Méditations de Marc-Aurèle "
@@ -137,7 +158,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] col-span-3 lg:col-span-2">
               <CardHeader
                 title="Mes Outils"
-                description="A mettre au service de votre projet"
+                description="«Nous changeons nos outils puis nos outils nous changent.» - Jeff B."
               />
               <ToolBoxItems
                 items={toolboxItems}
@@ -155,7 +176,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Développeur mais aussi.."
-                description="Rien de mieux pour réflechir qu'une petite partie."
+                description=""
                 className="pt-6 px-6"
               />
               <div className="relative flex-1" ref={constraintRef}>
@@ -167,13 +188,23 @@ export const AboutSection = () => {
                       left: hobby.left,
                       top: hobby.top,
                     }}
+                    initial={{y: 100}}
+                    whileInView={{ y: 0, transition: {
+                      type: "spring",
+                      bounce: 0.8,
+                      duration: 2
+                    }}}
                     drag
                     dragConstraints={constraintRef}
                   >
-                    <span className="font-medium text-gray-950">
-                      {hobby.title}
-                    </span>
-                    <span>{hobby.emoji}</span>
+                    <motion.div
+                      viewport={{ once: true, amount: 0.8 }}
+                    >
+                      <span className="font-medium text-gray-950">
+                        {hobby.title}
+                      </span>
+                      <span>{hobby.emoji}</span>
+                    </motion.div>
                   </motion.div>
                 ))}
               </div>
