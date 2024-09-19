@@ -34,7 +34,7 @@ const testimonials = [
     avatar: rustAvatar,
   },
   {
-    name: "Eric Ducreux",
+    name: "Eric D.",
     position: "Collaborateur @ C2RT",
     text: "",
     avatar: memojiAvatar1,
