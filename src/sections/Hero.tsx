@@ -1,4 +1,4 @@
-import profileImage from "@/assets/images/profile-picture3.png";
+import profileImage from "@/assets/images/portfolio-picture.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
