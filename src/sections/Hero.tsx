@@ -144,8 +144,10 @@ export const HeroSection = () => {
           <h1 className="font-serif text-3xl mdr:text-5xl text-center mt-8 tracking-wide">
             Safari Farda
           </h1>
-          <p className="text-center uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">Developpeur Fullstack</p>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
+          <p className=" text-center uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">
+            Developpeur Fullstack
+          </p>
+          <p className="mt-3 text-center text-white/60 md:text-lg">
             Concepteur de programmes web et mobile, avec une ceinture noire en
             Soft Skill et un rire contagieux.
           </p>

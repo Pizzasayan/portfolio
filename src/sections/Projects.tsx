@@ -52,7 +52,7 @@ export const ProjectsSection = () => {
     <section className="pb-16 lg:py-24">
       <div id="projects" className="container">
         <SectionHeader
-          eyebrow="Le design au service d'un but"
+          eyebrow="Designer par simplicité"
           title="Réalisations"
           description="« Créer un design numérique, c’est comme peindre, sauf que la peinture ne sèche jamais. » – Neville Brody"
         />

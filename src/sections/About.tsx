@@ -137,7 +137,7 @@ export const AboutSection = () => {
     <div className="py-20 lg:py-28">
       <div id="about" className="container">
         <SectionHeader
-          eyebrow="Mes inspirations et mes pinceaux"
+          eyebrow="Inspirations et Pinceaux"
           title="A propos de moi"
           description="« Sans un minimum de loisir, pas de travail créateur, par conséquent pas de culture ni de civilisation.» - De Roy Lewis"
         />

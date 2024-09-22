@@ -46,7 +46,7 @@ export const TestimonialsSection = () => {
     <div className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Le savoir faire mais aussi le savoir vivre"
+          eyebrow="Savoir faire et savoir vivre"
           title="Témoignages"
           description="« Tenir à l'estime de quelqu'un, c'est l'estimer; et c'est le témoignage le plus délicat qu'on puisse lui donner de son estime. » - Charles Dollfus"
         />
