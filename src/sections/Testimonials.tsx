@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Manon D.",
     position: "Présidente @ Maison",
-    text: "Farda est un perfectionniste, il n'arrêtera pas de s'appliquer à la tâche tant que le résultat n'est pas à la hauteur de ses attentes. Accessoirement il fait de très bons cookies, quand il ne travaille pas. Sauf qu'il travaille tout le temps. ",
+    text: "Farda est un perfectionniste, il n'arrêtera pas de s'appliquer à la tâche tant que le résultat ne sera pas à la hauteur de ses attentes. Accessoirement il fait de très bons cookies, quand il ne travaille pas. Sauf qu'il travaille tout le temps. ",
     avatar: memojiAvatar4,
   },
   {
