@@ -27,12 +27,12 @@ const testimonials = [
   //   text: "",
   //   avatar: memojiAvatar5,
   // },
-  // {
-  //   name: "Théo M.",
-  //   position: "Collaborateur @ C2RT",
-  //   text: "",
-  //   avatar: rustAvatar,
-  // },
+  {
+    name: "Théo M.",
+    position: "Collaborateur @ C2RT",
+    text: "Communication, rigueur, efficacité…Ses expériences professionnelles témoignent de ses capacités d'adaptation ainsi que de son talent pour la communication lors du travail en équipe. Toujours impliqué dans les tâches qu'on lui donne et qu'il s'attribue, il s'investit à 100 % pour mener son travail à la perfection. Il sera même prêt à apprendre Rust ou C si nécessaire, et ça, c'est la marque de quelqu'un de déterminé !",
+    avatar: rustAvatar,
+  },
 ];
 
 export const TestimonialsSection = () => {
