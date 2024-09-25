@@ -21,12 +21,12 @@ const testimonials = [
     text: "Rigoureux et autonome, Farda possède toutes les qualités nécessaires à un bon développeur. Sa passion et sa curiosité pour le développement feront de lui une excellente recrue pour un futur employeur. En plus d'être solide techniquement, sa bonne humeur et son sens de l'initiative feront qu'il s'intégrera très rapidement au sein d'une équipe. Pour conclure, travailler avec lui est un vrai plaisir !",
     avatar: memojiAvatar1,
   },
-  {
-    name: "Tony D.",
-    position: "Coordinateur @ C2RT",
-    text: "",
-    avatar: memojiAvatar5,
-  },
+  // {
+  //   name: "Tony D.",
+  //   position: "Coordinateur @ C2RT",
+  //   text: "",
+  //   avatar: memojiAvatar5,
+  // },
   // {
   //   name: "Théo M.",
   //   position: "Collaborateur @ C2RT",
