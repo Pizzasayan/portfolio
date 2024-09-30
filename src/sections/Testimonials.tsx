@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Manon D.",
     position: "Présidente @ Maison",
-    text: "Farda est un perfectionniste, il n'arrêtera pas de s'appliquer à la tâche tant que le résultat ne sera pas à la hauteur de ses attentes. Accessoirement il fait de très bons cookies, quand il ne travaille pas. Sauf qu'il travaille tout le temps. ",
+    text: "Farda est un perfectionniste, il n'arrêtera pas de s'appliquer à la tâche tant que le résultat ne sera pas à la hauteur de ses attentes. Accessoirement il fait de très bons cookies, quand il ne travaille pas. Mais il travaille tout le temps. ",
     avatar: memojiAvatar4,
   },
   {
@@ -21,12 +21,12 @@ const testimonials = [
     text: "Rigoureux et autonome, Farda possède toutes les qualités nécessaires à un bon développeur. Sa passion et sa curiosité pour le développement feront de lui une excellente recrue pour un futur employeur. En plus d'être solide techniquement, sa bonne humeur et son sens de l'initiative feront qu'il s'intégrera très rapidement au sein d'une équipe. Pour conclure, travailler avec lui est un vrai plaisir !",
     avatar: memojiAvatar1,
   },
-  // {
-  //   name: "Tony D.",
-  //   position: "Coordinateur @ C2RT",
-  //   text: "",
-  //   avatar: memojiAvatar5,
-  // },
+  {
+    name: "Tony D.",
+    position: "Coordinateur @ C2RT",
+    text: "En tant que responsable de formation, j'ai eu l'opportunité d'accompagner Mr Safari depuis le début de son parcours. Il a su se démarquer non seulement par ses compétences techniques, mais également par ses qualités personnelles. Il a fait preuve d'un leadership naturel, que ce soit au sein des projets de groupe ou dans la gestion de ses propres tâches. Il sait mobiliser une équipe, favoriser la collaboration, et mener les projets à terme avec une grande efficacité. Enfin, Farda contribue grandement à un environnement de travail harmonieux. Sa bienveillance, son écoute et son attitude positive sont très appréciées de ses collègues et créent un climat propice à l'entraide et à la réussite collective. Je suis convaincu que ces qualités feront de Mr Safari un atout précieux pour toute entreprise. Je le recommande chaleureusement.",
+    avatar: memojiAvatar5,
+  },
   {
     name: "Théo M.",
     position: "Collaborateur @ C2RT",
