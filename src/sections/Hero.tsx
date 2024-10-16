@@ -145,7 +145,7 @@ export const HeroSection = () => {
             Safari Farda
           </h1>
           <p className=" text-center uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">
-            Developpeur Fullstack
+            Concepteur Développeur Web et Mobile
           </p>
           <p className="mt-3 text-center text-white/60 md:text-lg">
             Concepteur de programmes web et mobile, avec une ceinture noire en
