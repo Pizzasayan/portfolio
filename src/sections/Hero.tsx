@@ -137,23 +137,23 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
-            <div className="text-sm font-medium">En recherche de poste !</div>
+            <div className="z-50 text-sm font-medium">En recherche de poste !</div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl mdr:text-5xl text-center mt-8 tracking-wide">
             Safari Farda
           </h1>
-          <p className=" text-center uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">
-            Concepteur Développeur d'Applications
+          <p className="z-50 text-center uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">
+            Développeur fullstack
           </p>
-          <p className="mt-3 text-center text-white/60 md:text-lg">
+          <p className="z-50 mt-3 text-center text-white/60 md:text-lg">
             Concepteur de programmes web et mobile, avec une ceinture noire en
             Soft Skill et un rire contagieux.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="z-20 inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <button className="z-50 inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <Link href="#projects" className="font-semibold">
               Voir mon travail
             </Link>
@@ -161,11 +161,11 @@ export const HeroSection = () => {
           </button>
           <Link
             href="#contact"
-            className="z-20 inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+            className="z-50 inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
             type="button"
           >
             <ArrowDown className="size-4" />
-            <span className="font-semibold">Me contacter</span>
+            <span className="z-50 font-semibold">Me contacter</span>
           </Link>
         </div>
       </div>
